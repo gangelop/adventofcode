@@ -1,6 +1,6 @@
 #!/usr/bin/awk -f
 
-NF > 0 { sums[i] += $1 }
+{ sums[i] += $1 }
 NF == 0 { i++ }
 END {
     asort(sums)
