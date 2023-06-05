@@ -14,6 +14,10 @@
 
 # TODO: I don't quite understand why break is needed here,
 # but without break the result is not what I expect.🤔
+#
+# Actually, the behavior of swtich statements (in C) is a bit tricky
+# and is discussed here:
+# https://stackoverflow.com/questions/252489/why-was-the-switch-statement-designed-to-need-a-break
 { switch ($1) {
     case "A": switch ($2) {
         case "X": score+=3+0; break
