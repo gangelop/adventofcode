@@ -4,4 +4,7 @@
 NF == 0 {
     if ( sum > max ) { max = sum }
     sum = 0 }
-END { print max }
+END {
+    if ( sum > max ) { max = sum }
+    print max
+}
